@@ -41,7 +41,7 @@ struct MCPClientChatApp: App {
                 .toolbarBackgroundVisibility(
                     .hidden, for: .windowToolbar)
                 .task {
-                    if let client = try? await githubClient.getClientAsync() {
+                    if let client = try? await atlassianClient.getClientAsync() {
                         chatManager.updateClient(client)
                     }
                 }
@@ -53,4 +53,6 @@ struct MCPClientChatApp: App {
     
     @State private var chatManager: ChatManager
     private let githubClient = GIthubMCPClient()
+    private let atlassianClient = AtlassianMCPClient()
+
 }
