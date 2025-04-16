@@ -13,7 +13,8 @@ import SwiftUI
 @Observable
 /// Handle a chat conversation without stream for OpenAI.
 final class OpenAIChatNonStreamManager: ChatManager {
-    
+    let OPENAI_CHAT_MODEL_NAME = ProcessInfo.processInfo.environment["OPENAI_CHAT_MODEL_NAME"]!
+
     // MARK: Lifecycle
     
     init(service: OpenAIService) {
@@ -132,7 +133,7 @@ final class OpenAIChatNonStreamManager: ChatManager {
         
         let parameters = OpenAIParameters(
             messages: openAIMessages,
-            model: .gpt4o,
+            model: .custom(OPENAI_CHAT_MODEL_NAME),
             toolChoice: .auto,
             tools: tools)
         print("🟡-----------\nparameters: \nmessages: \(parameters.messages)\nmodel: \(parameters.model)\ntools: \(String(describing: parameters.tools))\n-----------\n🟡make request")

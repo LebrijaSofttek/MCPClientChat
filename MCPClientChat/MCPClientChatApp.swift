@@ -14,13 +14,20 @@ struct MCPClientChatApp: App {
     // MARK: Lifecycle
     
     init() {
-        let apiKey = ProcessInfo.processInfo.environment["api_key"]!
+        let OPENAI_API_KEY = ProcessInfo.processInfo.environment["OPENAI_API_KEY"]!
+        let OPENAI_RESOURCE_NAME = ProcessInfo.processInfo.environment["OPENAI_RESOURCE_NAME"]!
+        let OPENAI_API_VERSION = ProcessInfo.processInfo.environment["OPENAI_API_VERSION"]!
+        // Azure
+        let azureConfig = AzureOpenAIConfiguration(resourceName: OPENAI_RESOURCE_NAME, openAIAPIKey: .apiKey(OPENAI_API_KEY), apiVersion: OPENAI_API_VERSION)
+        let azureAIService = OpenAIServiceFactory.service(azureConfiguration: azureConfig)
+        let azureAIChatNonStreamManager = OpenAIChatNonStreamManager(service: azureAIService)
+        _chatManager = State(initialValue: azureAIChatNonStreamManager)
         
-        let openAIService = OpenAIServiceFactory.service(apiKey: apiKey, debugEnabled: true)
-        
-        let openAIChatNonStreamManager = OpenAIChatNonStreamManager(service: openAIService)
-        
-        _chatManager = State(initialValue: openAIChatNonStreamManager)
+        // Open Ai
+//        let apiKey = ProcessInfo.processInfo.environment["api_key"]!
+//        let openAIService = OpenAIServiceFactory.service(apiKey: apiKey, debugEnabled: true)
+//        let openAIChatNonStreamManager = OpenAIChatNonStreamManager(service: openAIService)
+//        _chatManager = State(initialValue: openAIChatNonStreamManager)
     }
     
     // MARK: Internal

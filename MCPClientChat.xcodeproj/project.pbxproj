@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		549C1CB62DAEFE9D007CD5FA /* MCPSwiftWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 549C1CB52DAEFE9D007CD5FA /* MCPSwiftWrapper */; };
+		54E911B32DB0376400ACC390 /* MCPSwiftWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 54E911B22DB0376400ACC390 /* MCPSwiftWrapper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				549C1CB62DAEFE9D007CD5FA /* MCPSwiftWrapper in Frameworks */,
+				54E911B32DB0376400ACC390 /* MCPSwiftWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +78,7 @@
 			);
 			name = MCPClientChat;
 			packageProductDependencies = (
-				549C1CB52DAEFE9D007CD5FA /* MCPSwiftWrapper */,
+				54E911B22DB0376400ACC390 /* MCPSwiftWrapper */,
 			);
 			productName = MCPClientChat;
 			productReference = 7BDD62A92D764A4A00E18088 /* MCPClientChat.app */;
@@ -109,7 +109,7 @@
 			mainGroup = 7BDD62A02D764A4A00E18088;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				549C1CB42DAEFE9D007CD5FA /* XCRemoteSwiftPackageReference "MCPSwiftWrapper" */,
+				54E911B12DB0376400ACC390 /* XCRemoteSwiftPackageReference "MCPSwiftWrapper" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7BDD62AA2D764A4A00E18088 /* Products */;
@@ -338,9 +338,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		549C1CB42DAEFE9D007CD5FA /* XCRemoteSwiftPackageReference "MCPSwiftWrapper" */ = {
+		54E911B12DB0376400ACC390 /* XCRemoteSwiftPackageReference "MCPSwiftWrapper" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jamesrochabrun/MCPSwiftWrapper";
+			repositoryURL = "https://github.com/rosassebastian-sfttk/MCPSwiftWrapper";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -349,9 +349,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		549C1CB52DAEFE9D007CD5FA /* MCPSwiftWrapper */ = {
+		54E911B22DB0376400ACC390 /* MCPSwiftWrapper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 549C1CB42DAEFE9D007CD5FA /* XCRemoteSwiftPackageReference "MCPSwiftWrapper" */;
+			package = 54E911B12DB0376400ACC390 /* XCRemoteSwiftPackageReference "MCPSwiftWrapper" */;
 			productName = MCPSwiftWrapper;
 		};
 /* End XCSwiftPackageProductDependency section */
