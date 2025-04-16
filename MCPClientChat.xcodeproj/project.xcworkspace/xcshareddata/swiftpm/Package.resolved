@@ -1,5 +1,5 @@
 {
-  "originHash" : "66916e896ff58a78f70c7690750683be636a188618f1ef9dc30832ac829fdc78",
+  "originHash" : "e380985c29c37c98226d4bf2a7eab38a6a2929c4032916ac89fa7a31ec160631",
   "pins" : [
     {
       "identity" : "jsonrpc",
@@ -22,10 +22,10 @@
     {
       "identity" : "mcpswiftwrapper",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jamesrochabrun/MCPSwiftWrapper",
+      "location" : "https://github.com/rosassebastian-sfttk/MCPSwiftWrapper",
       "state" : {
         "branch" : "main",
-        "revision" : "bc8ff58d04bdd80a5dd11bb4f11100c0c1086e30"
+        "revision" : "09ada8a13bf428d2fc19c813b17220102cc3bbbf"
       }
     },
     {
@@ -58,10 +58,10 @@
     {
       "identity" : "swiftopenai",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jamesrochabrun/SwiftOpenAI",
+      "location" : "https://github.com/rosassebastian-sfttk/SwiftOpenAI.git",
       "state" : {
-        "revision" : "3e81448e4e3bf20d61065defd3a46075cf126ceb",
-        "version" : "4.0.7"
+        "branch" : "main",
+        "revision" : "007d7d6cc1e9dabce00c28546fea4a83a4d1c816"
       }
     }
   ],
