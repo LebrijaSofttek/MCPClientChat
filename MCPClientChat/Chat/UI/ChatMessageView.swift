@@ -71,6 +71,9 @@ struct ChatMessageView: View {
         Text(LocalizedStringKey(message.text))
           .fixedSize(horizontal: false, vertical: true)
           .foregroundColor(.primary)
+          .onAppear{
+              print(message.text)
+          }
       }
     }
   }
